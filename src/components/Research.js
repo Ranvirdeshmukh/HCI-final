@@ -42,30 +42,30 @@ const Research = () => {
                   <h3 className="text-2xl md:text-3xl font-bold text-apple-text mb-6">
                     Research Method
                   </h3>
-                  <p className="text-lg text-apple-text leading-relaxed mb-6">
-                    <span className="font-semibold text-apple-blue">8 semi‑structured interviews</span> with Dartmouth students & recent grads about hydration, workouts, and meal‑timing lapses.
-                  </p>
-                  <p className="text-apple-secondary leading-relaxed">
-                    Affinity mapping revealed three motivation levers: gentle reminders, community support, and gamified stakes.
-                  </p>
+                                     <p className="text-lg text-apple-text leading-relaxed mb-6">
+                     <span className="font-semibold text-apple-blue">Focus groups and interviews</span> with Dartmouth students exploring health and wellness habits, particularly around hydration, eating, and accountability.
+                   </p>
+                   <p className="text-apple-secondary leading-relaxed">
+                     Synthesis revealed three key themes: <span className="font-semibold text-apple-blue">Reminders, Community, and Gamification</span> as core motivational drivers for habit formation.
+                   </p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-apple-blue/10 to-purple-100 rounded-2xl p-8 text-center">
                   <div className="text-6xl mb-4">🔍</div>
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-apple-blue">8</div>
-                      <div className="text-sm text-apple-secondary">Interviews</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-apple-blue">3</div>
-                      <div className="text-sm text-apple-secondary">Key Areas</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-apple-blue">24</div>
-                      <div className="text-sm text-apple-secondary">Total Users</div>
-                    </div>
-                  </div>
+                                     <div className="grid grid-cols-3 gap-4 text-center">
+                     <div>
+                       <div className="text-2xl font-bold text-apple-blue">Focus</div>
+                       <div className="text-sm text-apple-secondary">Groups</div>
+                     </div>
+                     <div>
+                       <div className="text-2xl font-bold text-apple-blue">3</div>
+                       <div className="text-sm text-apple-secondary">Themes</div>
+                     </div>
+                     <div>
+                       <div className="text-2xl font-bold text-apple-blue">24</div>
+                       <div className="text-sm text-apple-secondary">Participants</div>
+                     </div>
+                   </div>
                 </div>
               </div>
             </div>
@@ -123,25 +123,34 @@ const Research = () => {
                 Key Research Questions
               </h3>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm font-bold">?</span>
-                  </div>
-                  <p className="text-lg text-apple-text leading-relaxed">
-                    Which factors (goal‑setting, streaks, haptics) actually motivate behavior change?
-                  </p>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm font-bold">?</span>
-                  </div>
-                  <p className="text-lg text-apple-text leading-relaxed">
-                    How much privacy do users expect when sharing accountability with friends?
-                  </p>
-                </div>
-              </div>
+                             <div className="space-y-6">
+                 <div className="flex items-start space-x-4">
+                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                     <span className="text-white text-sm font-bold">?</span>
+                   </div>
+                   <p className="text-lg text-apple-text leading-relaxed">
+                     Which factors (goal‑setting, streaks, haptic feedback) actually motivate different user segments to stick with a routine?
+                   </p>
+                 </div>
+                 
+                 <div className="flex items-start space-x-4">
+                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                     <span className="text-white text-sm font-bold">?</span>
+                   </div>
+                   <p className="text-lg text-apple-text leading-relaxed">
+                     What kinds of social interactions (anonymous vs. personal) best foster accountability without causing comparison stress?
+                   </p>
+                 </div>
+                 
+                 <div className="flex items-start space-x-4">
+                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                     <span className="text-white text-sm font-bold">?</span>
+                   </div>
+                   <p className="text-lg text-apple-text leading-relaxed">
+                     How much anonymity or privacy do users expect within a health‑focused community?
+                   </p>
+                 </div>
+               </div>
             </div>
           </motion.div>
 
@@ -162,16 +171,16 @@ const Research = () => {
                     <p className="text-apple-secondary">Dartmouth undergrad</p>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <span className="font-semibold text-apple-text">Need:</span>
-                    <span className="text-apple-secondary ml-2">A nudge to drink water</span>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-apple-text">Goal:</span>
-                    <span className="text-apple-secondary ml-2">Stay hydrated during study sessions</span>
-                  </div>
-                </div>
+                                 <div className="space-y-4">
+                   <div>
+                     <span className="font-semibold text-apple-text">Need:</span>
+                     <span className="text-apple-secondary ml-2">Frustration - a nudge to drink water</span>
+                   </div>
+                   <div>
+                     <span className="font-semibold text-apple-text">Goal:</span>
+                     <span className="text-apple-secondary ml-2">Stay on top of fitness goals and remain hydrated</span>
+                   </div>
+                 </div>
               </div>
               
               <div className="bg-white rounded-3xl p-8 shadow-apple">
@@ -184,24 +193,24 @@ const Research = () => {
                     <p className="text-apple-secondary">Recent graduate</p>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <span className="font-semibold text-apple-text">Need:</span>
-                    <span className="text-apple-secondary ml-2">Accountability partner</span>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-apple-text">Goal:</span>
-                    <span className="text-apple-secondary ml-2">Stick to workout routine</span>
-                  </div>
-                </div>
+                                 <div className="space-y-4">
+                   <div>
+                     <span className="font-semibold text-apple-text">Need:</span>
+                     <span className="text-apple-secondary ml-2">Frustration - an accountability partner when consistent with fitness routine</span>
+                   </div>
+                   <div>
+                     <span className="font-semibold text-apple-text">Goal:</span>
+                     <span className="text-apple-secondary ml-2">Stay consistent with fitness routine/stay healthy</span>
+                   </div>
+                 </div>
               </div>
             </div>
             
-            <div className="bg-apple-blue/10 rounded-2xl p-6 mt-8">
-              <p className="text-lg font-medium text-apple-text text-center">
-                <span className="font-bold">Point of View:</span> Busy achievers need a lightweight, high‑commitment nudge so they actually stick to healthy micro‑habits during crunch weeks.
-              </p>
-            </div>
+                         <div className="bg-apple-blue/10 rounded-2xl p-6 mt-8">
+               <p className="text-lg font-medium text-apple-text text-center">
+                 <span className="font-bold">Point of View:</span> Students and young professionals need intelligent accountability partners that stay fun and rewarding, helping them maintain consistent healthy habits without feeling overwhelmed or judged.
+               </p>
+             </div>
           </motion.div>
         </motion.div>
       </div>

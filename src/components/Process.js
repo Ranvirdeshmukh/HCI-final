@@ -137,33 +137,33 @@ const Process = () => {
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                <h4 className="font-semibold text-apple-text mb-3">Social Dynamics</h4>
-                <p className="text-apple-secondary text-sm leading-relaxed">
-                  "How might we gamify shared progress so accountability stays fun?"
-                </p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 border border-green-200">
-                <h4 className="font-semibold text-apple-text mb-3">Motivation</h4>
-                <p className="text-apple-secondary text-sm leading-relaxed">
-                  "How might we create meaningful stakes without causing stress?"
-                </p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 border border-purple-200">
-                <h4 className="font-semibold text-apple-text mb-3">Timing</h4>
-                <p className="text-apple-secondary text-sm leading-relaxed">
-                  "How might we respect users' schedules while maintaining urgency?"
-                </p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 border border-orange-200">
-                <h4 className="font-semibold text-apple-text mb-3">Technology</h4>
-                <p className="text-apple-secondary text-sm leading-relaxed">
-                  "How might we use notifications that feel helpful, not intrusive?"
-                </p>
-              </div>
+                             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
+                 <h4 className="font-semibold text-apple-text mb-3">Gentle Reminders</h4>
+                 <p className="text-apple-secondary text-sm leading-relaxed">
+                   "How might we create gentle reminders that nudge action without adding mental clutter?"
+                 </p>
+               </div>
+               
+               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 border border-green-200">
+                 <h4 className="font-semibold text-apple-text mb-3">Community Support</h4>
+                 <p className="text-apple-secondary text-sm leading-relaxed">
+                   "How might we create small accountability groups that stay fun and rewarding enough for every member to keep meeting their health goals?"
+                 </p>
+               </div>
+               
+               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 border border-purple-200">
+                 <h4 className="font-semibold text-apple-text mb-3">Supportive Nudges</h4>
+                 <p className="text-apple-secondary text-sm leading-relaxed">
+                   "How might we enable partners to send timely, supportive nudges that feel encouraging—not nagging—when one slips?"
+                 </p>
+               </div>
+               
+               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 border border-orange-200">
+                 <h4 className="font-semibold text-apple-text mb-3">Contextual Timing</h4>
+                 <p className="text-apple-secondary text-sm leading-relaxed">
+                   "How might we tie water-drinking and eating cues to a person's natural rhythm instead of random pop-ups?"
+                 </p>
+               </div>
             </div>
           </motion.div>
 
