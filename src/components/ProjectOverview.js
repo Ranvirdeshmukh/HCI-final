@@ -38,7 +38,7 @@ const ProjectOverview = () => {
             <div className="bg-apple-gray/30 rounded-3xl p-8 md:p-12">
               <p className="text-lg md:text-xl text-apple-text leading-relaxed mb-8">
                 Traditional reminder apps are painless to dismiss—no urgency, no consequence, and no human on the other end. 
-                Interviews with busy students and young professionals surfaced three recurring frustrations:
+                Focus groups with students revealed that health is personal and contextual, shaped by lifestyle, culture, work schedule, and energy levels. As one participant noted: "What works for one person doesn't work for another, I need flexibility, not a rigid plan."
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
