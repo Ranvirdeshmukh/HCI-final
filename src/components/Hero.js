@@ -39,6 +39,7 @@ const Hero = () => {
           >
             <span className="text-gradient">StakeClock</span>
           </motion.h1>
+          
 
           {/* Tagline */}
           <motion.p 
