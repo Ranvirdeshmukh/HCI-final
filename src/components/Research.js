@@ -42,31 +42,77 @@ const Research = () => {
                   <h3 className="text-2xl md:text-3xl font-bold text-apple-text mb-6">
                     Research Method
                   </h3>
-                                     <p className="text-lg text-apple-text leading-relaxed mb-6">
-                     <span className="font-semibold text-apple-blue">Focus groups and interviews</span> with Dartmouth students exploring health and wellness habits, particularly around hydration, eating, and accountability.
-                   </p>
-                   <p className="text-apple-secondary leading-relaxed">
-                     Synthesis revealed three key themes: <span className="font-semibold text-apple-blue">Reminders, Community, and Gamification</span> as core motivational drivers for habit formation.
-                   </p>
+                  <p className="text-lg text-apple-text leading-relaxed mb-6">
+                    <span className="font-semibold text-apple-blue">Focus groups and interviews</span> with Dartmouth students exploring health and wellness habits, particularly around hydration, eating, and accountability.
+                  </p>
+                  <p className="text-apple-secondary leading-relaxed">
+                    Synthesis revealed three key themes: <span className="font-semibold text-apple-blue">Reminders, Community, and Gamification</span> as core motivational drivers for habit formation.
+                  </p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-apple-blue/10 to-purple-100 rounded-2xl p-8 text-center">
                   <div className="text-6xl mb-4">🔍</div>
-                                     <div className="grid grid-cols-3 gap-4 text-center">
-                     <div>
-                       <div className="text-2xl font-bold text-apple-blue">Focus</div>
-                       <div className="text-sm text-apple-secondary">Groups</div>
-                     </div>
-                     <div>
-                       <div className="text-2xl font-bold text-apple-blue">3</div>
-                       <div className="text-sm text-apple-secondary">Themes</div>
-                     </div>
-                     <div>
-                       <div className="text-2xl font-bold text-apple-blue">24</div>
-                       <div className="text-sm text-apple-secondary">Experiment Participants</div>
-                     </div>
-                   </div>
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-apple-blue">Focus</div>
+                      <div className="text-sm text-apple-secondary">Groups</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-apple-blue">3</div>
+                      <div className="text-sm text-apple-secondary">Themes</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-apple-blue">24</div>
+                      <div className="text-sm text-apple-secondary">Experiment Participants</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* POV Statement */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
+              Point of View Statement
+            </h3>
+            
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
+              <div className="text-center mb-8">
+                <img
+                  src="/POV.png"
+                  alt="Point of View Statement - User needs and insights"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+                />
+              </div>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  Our POV statement synthesizes user research insights to clearly define the problem space 
+                  and user needs that StakeClock addresses.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* User Action Flow */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
+              User Action Flow
+            </h3>
+            
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
+              <div className="text-center mb-8">
+                <img
+                  src="/5.2_ Maeve, Ranvir, Baris.png"
+                  alt="User Action Flow - Step-by-step user journey"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+                />
+              </div>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  This user action flow maps the complete journey from goal setting to task completion, 
+                  highlighting key interaction points and decision moments.
+                </p>
               </div>
             </div>
           </motion.div>
@@ -105,89 +151,6 @@ const Research = () => {
             </div>
           </motion.div>
 
-          {/* Design Principles */}
-          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
-              Design Principles
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-2xl p-8 shadow-apple hover-lift">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-3xl">🤝</span>
-                </div>
-                <h4 className="font-bold text-apple-text text-center mb-4">
-                  Supportive, not competitive
-                </h4>
-                <p className="text-apple-secondary text-center leading-relaxed">
-                  Focus on mutual success rather than competition between friends.
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-2xl p-8 shadow-apple hover-lift">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-3xl">⏱️</span>
-                </div>
-                <h4 className="font-bold text-apple-text text-center mb-4">
-                  Respect users' time & attention
-                </h4>
-                <p className="text-apple-secondary text-center leading-relaxed">
-                  Minimal interruptions with meaningful, timely notifications.
-                </p>
-              </div>
-              
-              <div className="bg-white rounded-2xl p-8 shadow-apple hover-lift">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-3xl">🎉</span>
-                </div>
-                <h4 className="font-bold text-apple-text text-center mb-4">
-                  Celebrate progress, not perfection
-                </h4>
-                <p className="text-apple-secondary text-center leading-relaxed">
-                  Acknowledge small wins and learning from missed opportunities.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Research Questions */}
-          <motion.div variants={fadeInUp} className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-apple-blue/5 to-purple-50 rounded-3xl p-8 md:p-12 border border-apple-blue/10">
-              <h3 className="text-2xl md:text-3xl font-bold text-apple-text mb-8 text-center">
-                Key Research Questions
-              </h3>
-              
-                             <div className="space-y-6">
-                 <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                     <span className="text-white text-sm font-bold">?</span>
-                   </div>
-                   <p className="text-lg text-apple-text leading-relaxed">
-                     Which factors (goal‑setting, streaks, haptic feedback) actually motivate different user segments to stick with a routine?
-                   </p>
-                 </div>
-                 
-                 <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                     <span className="text-white text-sm font-bold">?</span>
-                   </div>
-                   <p className="text-lg text-apple-text leading-relaxed">
-                     What kinds of social interactions (anonymous vs. personal) best foster accountability without causing comparison stress?
-                   </p>
-                 </div>
-                 
-                 <div className="flex items-start space-x-4">
-                   <div className="w-6 h-6 bg-apple-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                     <span className="text-white text-sm font-bold">?</span>
-                   </div>
-                   <p className="text-lg text-apple-text leading-relaxed">
-                     How much anonymity or privacy do users expect within a health‑focused community?
-                   </p>
-                 </div>
-               </div>
-            </div>
-          </motion.div>
-
           {/* User Personas */}
           <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
@@ -205,16 +168,16 @@ const Research = () => {
                     <p className="text-apple-secondary">Dartmouth undergrad</p>
                   </div>
                 </div>
-                                 <div className="space-y-4">
-                   <div>
-                     <span className="font-semibold text-apple-text">Need:</span>
-                     <span className="text-apple-secondary ml-2">Frustration - a nudge to drink water</span>
-                   </div>
-                   <div>
-                     <span className="font-semibold text-apple-text">Goal:</span>
-                     <span className="text-apple-secondary ml-2">Stay on top of fitness goals and remain hydrated</span>
-                   </div>
-                 </div>
+                <div className="space-y-4">
+                  <div>
+                    <span className="font-semibold text-apple-text">Need:</span>
+                    <span className="text-apple-secondary ml-2">Frustration - a nudge to drink water</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-apple-text">Goal:</span>
+                    <span className="text-apple-secondary ml-2">Stay on top of fitness goals and remain hydrated</span>
+                  </div>
+                </div>
               </div>
               
               <div className="bg-white rounded-3xl p-8 shadow-apple">
@@ -227,24 +190,24 @@ const Research = () => {
                     <p className="text-apple-secondary">Recent graduate</p>
                   </div>
                 </div>
-                                 <div className="space-y-4">
-                   <div>
-                     <span className="font-semibold text-apple-text">Need:</span>
-                     <span className="text-apple-secondary ml-2">Frustration - an accountability partner when consistent with fitness routine</span>
-                   </div>
-                   <div>
-                     <span className="font-semibold text-apple-text">Goal:</span>
-                     <span className="text-apple-secondary ml-2">Stay consistent with fitness routine/stay healthy</span>
-                   </div>
-                 </div>
+                <div className="space-y-4">
+                  <div>
+                    <span className="font-semibold text-apple-text">Need:</span>
+                    <span className="text-apple-secondary ml-2">Frustration - an accountability partner when consistent with fitness routine</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-apple-text">Goal:</span>
+                    <span className="text-apple-secondary ml-2">Stay consistent with fitness routine/stay healthy</span>
+                  </div>
+                </div>
               </div>
             </div>
             
-                         <div className="bg-apple-blue/10 rounded-2xl p-6 mt-8">
-               <p className="text-lg font-medium text-apple-text text-center">
-                 <span className="font-bold">Point of View:</span> Students and young professionals need intelligent accountability partners that stay fun and rewarding, helping them maintain consistent healthy habits without feeling overwhelmed or judged.
-               </p>
-             </div>
+            <div className="bg-apple-blue/10 rounded-2xl p-6 mt-8">
+              <p className="text-lg font-medium text-apple-text text-center">
+                <span className="font-bold">Point of View:</span> Students and young professionals need intelligent accountability partners that stay fun and rewarding, helping them maintain consistent healthy habits without feeling overwhelmed or judged.
+              </p>
+            </div>
           </motion.div>
         </motion.div>
       </div>

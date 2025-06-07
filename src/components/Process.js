@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import ImageModal from './ImageModal';
 
 const Process = () => {
+  const [modalState, setModalState] = useState({
+    isOpen: false,
+    imageSrc: '',
+    imageAlt: '',
+    title: ''
+  });
+
+  const openModal = (imageSrc, imageAlt, title) => {
+    setModalState({
+      isOpen: true,
+      imageSrc,
+      imageAlt,
+      title
+    });
+  };
+
+  const closeModal = () => {
+    setModalState({
+      isOpen: false,
+      imageSrc: '',
+      imageAlt: '',
+      title: ''
+    });
+  };
+
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -130,40 +156,71 @@ const Process = () => {
             </div>
           </motion.div>
 
-          {/* Key HMW Questions */}
-          <motion.div variants={fadeInUp} className="max-w-4xl mx-auto">
+          {/* How Might We Questions */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-apple-text text-center mb-12">
               How Might We Questions
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                 <h4 className="font-semibold text-apple-text mb-3">Gentle Reminders</h4>
-                 <p className="text-apple-secondary text-sm leading-relaxed">
-                   "How might we create gentle reminders that nudge action without adding mental clutter?"
-                 </p>
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100">
+                             <div className="text-center mb-8 relative group">
+                 <motion.img
+                   initial={{ opacity: 0, scale: 0.95 }}
+                   whileInView={{ opacity: 1, scale: 1 }}
+                   whileHover={{ scale: 1.02 }}
+                   viewport={{ once: true }}
+                   transition={{ duration: 0.6 }}
+                   src="/HMW.png"
+                   alt="How Might We Questions - Design challenge framing"
+                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
+                   onClick={() => openModal("/HMW.png", "How Might We Questions - Design challenge framing", "How Might We Questions")}
+                 />
+                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                   <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                     <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                   </div>
+                 </div>
                </div>
-               
-               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 border border-green-200">
-                 <h4 className="font-semibold text-apple-text mb-3">Community Support</h4>
-                 <p className="text-apple-secondary text-sm leading-relaxed">
-                   "How might we create small accountability groups that stay fun and rewarding enough for every member to keep meeting their health goals?"
-                 </p>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  Our HMW questions helped frame design challenges and guided brainstorming sessions 
+                  toward actionable solutions for habit formation and accountability.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* 3 Principles of Success */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-apple-text text-center mb-12">
+              3 Principles of Success
+            </h3>
+            
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
+                             <div className="text-center mb-8 relative group">
+                 <motion.img
+                   initial={{ opacity: 0, scale: 0.95 }}
+                   whileInView={{ opacity: 1, scale: 1 }}
+                   whileHover={{ scale: 1.02 }}
+                   viewport={{ once: true }}
+                   transition={{ duration: 0.6 }}
+                   src="/3principals of success.png"
+                   alt="3 Principles of Success - Core design principles"
+                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
+                   onClick={() => openModal("/3principals of success.png", "3 Principles of Success - Core design principles", "3 Principles of Success")}
+                 />
+                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                   <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                     <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                   </div>
+                 </div>
                </div>
-               
-               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 border border-purple-200">
-                 <h4 className="font-semibold text-apple-text mb-3">Supportive Nudges</h4>
-                 <p className="text-apple-secondary text-sm leading-relaxed">
-                   "How might we enable partners to send timely, supportive nudges that feel encouraging—not nagging—when one slips?"
-                 </p>
-               </div>
-               
-               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 border border-orange-200">
-                 <h4 className="font-semibold text-apple-text mb-3">Contextual Timing</h4>
-                 <p className="text-apple-secondary text-sm leading-relaxed">
-                   "How might we tie water-drinking and eating cues to a person's natural rhythm instead of random pop-ups?"
-                 </p>
-               </div>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  These three principles guided our design decisions throughout the project, 
+                  ensuring StakeClock addresses core user needs effectively.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -202,6 +259,15 @@ const Process = () => {
           </motion.div>
         </motion.div>
       </div>
+      
+      {/* Image Modal */}
+      <ImageModal
+        isOpen={modalState.isOpen}
+        onClose={closeModal}
+        imageSrc={modalState.imageSrc}
+        imageAlt={modalState.imageAlt}
+        title={modalState.title}
+      />
     </section>
   );
 };
