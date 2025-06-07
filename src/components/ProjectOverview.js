@@ -143,9 +143,17 @@ const ProjectOverview = () => {
               
               <div className="bg-gradient-to-br from-apple-blue/10 to-purple-100 rounded-3xl p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg mb-6 mx-auto">
-                    <span className="text-5xl">⏰</span>
-                  </div>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    className="relative group mb-6 mx-auto"
+                  >
+                    <img
+                      src="/stakeclock-product.png"
+                      alt="StakeClock App Interface - Social accountability timer with countdown and stake selection"
+                      className="w-64 h-auto max-w-full rounded-3xl shadow-apple hover:shadow-apple-lg transition-all duration-300 bg-white p-4"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 rounded-3xl transition-all duration-300"></div>
+                  </motion.div>
                   <p className="text-lg font-medium text-apple-text">
                     Social pings plus real money make the cost of inaction tangible and the win truly shared.
                   </p>

@@ -148,6 +148,36 @@ const Results = () => {
             </div>
           </motion.div>
 
+          {/* Product Demo */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-br from-apple-gray/20 to-apple-blue/5 rounded-3xl p-8 md:p-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-8">
+                StakeClock App Experience
+              </h3>
+              <p className="text-lg text-apple-secondary text-center mb-12 max-w-3xl mx-auto">
+                Here's the actual StakeClock interface our participants used during the controlled experiment. 
+                The app combines social accountability with financial stakes to drive habit completion.
+              </p>
+              
+              <div className="flex justify-center">
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className="relative group max-w-sm mx-auto"
+                >
+                  <img
+                    src="/stakeclock-product.png"
+                    alt="StakeClock App Interface - Real product used in controlled experiment showing countdown timer, social features, and stake selection"
+                    className="w-full h-auto rounded-3xl shadow-apple-lg hover:shadow-2xl transition-all duration-300 bg-white p-6"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 rounded-3xl transition-all duration-300"></div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <span className="text-sm font-medium text-apple-text">Actual Product Tested</span>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Iterations */}
           <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-apple">
