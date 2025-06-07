@@ -155,13 +155,13 @@ const Reflection = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="bg-green-50 rounded-2xl p-6 border-l-4 border-green-500">
-                    <h4 className="font-bold text-green-800 mb-2">Academic Recognition</h4>
-                    <p className="text-green-700">
-                      Won "Most Actionable Design" award in the Dartmouth HCI capstone showcase, 
-                      recognized for practical applicability and strong research foundation.
-                    </p>
-                  </div>
+                                     <div className="bg-green-50 rounded-2xl p-6 border-l-4 border-green-500">
+                     <h4 className="font-bold text-green-800 mb-2">Research Validation</h4>
+                     <p className="text-green-700">
+                       Successfully demonstrated through controlled experimentation that social and financial accountability 
+                       significantly improves task completion rates compared to traditional digital reminders.
+                     </p>
+                   </div>
                   
                   <div className="bg-blue-50 rounded-2xl p-6 border-l-4 border-blue-500">
                     <h4 className="font-bold text-blue-800 mb-2">Behavioral Insights</h4>

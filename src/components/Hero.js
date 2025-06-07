@@ -76,7 +76,7 @@ const Hero = () => {
             </div>
             <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
               <h3 className="font-semibold text-apple-text mb-2">Impact</h3>
-              <p className="text-apple-secondary font-semibold text-apple-blue">+313% completion</p>
+              <p className="text-apple-secondary font-semibold text-apple-blue">313% improvement</p>
             </div>
           </motion.div>
 

@@ -33,9 +33,9 @@ npm run build
 **StakeClock** is a social‑accountability timer that pairs friends—and their shared cash "stake"—to turn good intentions into completed habits. This website presents the complete case study of our final project at Dartmouth College, exploring health and wellness habit formation through community accountability.
 
 ### Key Results
-- **+313% increase** in task completion vs. digital‑only baseline
-- **Won "Most Actionable Design"** in class showcase
-- **100% user retention** for Social + Financial condition
+- **313% increase** in task completion: Social+Financial (4.71) vs Digital-only (1.14)
+- **Statistical significance achieved** with p-values < 0.001 for both social conditions
+- **100% likelihood to continue** for Social + Financial group
 
 ## 🏗️ Technology Stack
 
