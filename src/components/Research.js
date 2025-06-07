@@ -71,6 +71,40 @@ const Research = () => {
             </div>
           </motion.div>
 
+          {/* Focus Group Insights */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
+              Key Focus Group Insights
+            </h3>
+            
+            <div className="bg-apple-gray/30 rounded-3xl p-8 md:p-12 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="text-4xl mb-4">45%</div>
+                  <h4 className="font-semibold text-apple-text mb-2">Positive Sentiment</h4>
+                  <p className="text-apple-secondary text-sm">Excitement about community support</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-4">35%</div>
+                  <h4 className="font-semibold text-apple-text mb-2">Neutral Sentiment</h4>
+                  <p className="text-apple-secondary text-sm">Factual reporting of habits</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-4">20%</div>
+                  <h4 className="font-semibold text-apple-text mb-2">Negative Sentiment</h4>
+                  <p className="text-apple-secondary text-sm">Frustration over forgetfulness</p>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-6 bg-white rounded-2xl">
+                <p className="text-apple-text leading-relaxed">
+                  <span className="font-bold">Key Quote:</span> "I get so busy during the day that I realize at 3 PM I haven't had any water." 
+                  This highlights the need for intelligent, context-aware reminders that respect users' schedules while promoting healthy habits.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Design Principles */}
           <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">

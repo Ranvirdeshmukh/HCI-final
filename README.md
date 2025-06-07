@@ -30,7 +30,7 @@ npm run build
 
 ## 🎯 Project Overview
 
-**StakeClock** is a social‑accountability timer that pairs friends—and their shared cash "stake"—to turn good intentions into completed habits. This website presents the complete case study of our 4-week HCI capstone project at Dartmouth College.
+**StakeClock** is a social‑accountability timer that pairs friends—and their shared cash "stake"—to turn good intentions into completed habits. This website presents the complete case study of our final project at Dartmouth College, exploring health and wellness habit formation through community accountability.
 
 ### Key Results
 - **+313% increase** in task completion vs. digital‑only baseline
@@ -91,14 +91,15 @@ npm run build
 - **Maeve Conneely** - Research & User Experience
 - **Baris Yildirim** - Interaction & Visual Design  
 - **Ranvir Deshmukh** - Prototyping & Development
+- **Dawson** - Research & Analysis
 
 ## 🔬 Research Highlights
 
 ### Methodology
-- 8 semi-structured interviews
-- 24 total pilot users
-- Controlled A/B/C testing
-- Statistical significance (p < 0.001)
+- Focus groups with Dartmouth students
+- Comprehensive research on health and wellness habits
+- Synthesis of themes: Reminders, Community, and Gamification
+- User journey mapping and storyboard development
 
 ### Key Findings
 - Social + Financial stakes = 4.71 avg. tasks completed
@@ -117,11 +118,11 @@ No environment variables required for basic deployment.
 
 ## 📝 License
 
-Created for educational purposes as part of Dartmouth College HCI Capstone course.
+Created for educational purposes as part of Dartmouth College final project.
 
 ## 🙏 Acknowledgments
 
-Special thanks to our 24 pilot users who helped validate the StakeClock concept through their participation in hydration, exercise, and meal-timing habit formation experiments.
+Special thanks to all focus group participants who shared their experiences with health and wellness habits, helping us understand the challenges and opportunities in designing supportive accountability systems.
 
 ---
 

@@ -42,29 +42,29 @@ const ProjectOverview = () => {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-2xl p-6 shadow-apple">
-                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-2xl">📱</span>
-                  </div>
-                  <h3 className="font-semibold text-apple-text mb-2">Easy to Dismiss</h3>
-                  <p className="text-apple-secondary">Digital nudges are easy to swipe away.</p>
-                </div>
-                
-                <div className="bg-white rounded-2xl p-6 shadow-apple">
-                  <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-2xl">🤝</span>
-                  </div>
-                  <h3 className="font-semibold text-apple-text mb-2">No Accountability</h3>
-                  <p className="text-apple-secondary">Lack of accountability kills motivation.</p>
-                </div>
-                
-                <div className="bg-white rounded-2xl p-6 shadow-apple">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-2xl">⏰</span>
-                  </div>
-                  <h3 className="font-semibold text-apple-text mb-2">No Stakes</h3>
-                  <p className="text-apple-secondary">No real stakes means "I'll do it later."</p>
-                </div>
+                                 <div className="bg-white rounded-2xl p-6 shadow-apple">
+                   <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                     <span className="text-2xl">💧</span>
+                   </div>
+                   <h3 className="font-semibold text-apple-text mb-2">Individualized Health Approaches</h3>
+                   <p className="text-apple-secondary">Health is personal and contextual, shaped by lifestyle and energy levels.</p>
+                 </div>
+                 
+                 <div className="bg-white rounded-2xl p-6 shadow-apple">
+                   <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                     <span className="text-2xl">🍽️</span>
+                   </div>
+                   <h3 className="font-semibold text-apple-text mb-2">Hydration & Eating Challenges</h3>
+                   <p className="text-apple-secondary">Forgetting to hydrate or eat regularly due to lack of knowledge and busy schedules.</p>
+                 </div>
+                 
+                 <div className="bg-white rounded-2xl p-6 shadow-apple">
+                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                     <span className="text-2xl">🤝</span>
+                   </div>
+                   <h3 className="font-semibold text-apple-text mb-2">Community Accountability</h3>
+                   <p className="text-apple-secondary">Strong interest in community-focused accountability to motivate healthy behaviors.</p>
+                 </div>
               </div>
             </div>
           </motion.div>
