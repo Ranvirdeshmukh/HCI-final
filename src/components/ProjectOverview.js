@@ -145,12 +145,12 @@ const ProjectOverview = () => {
                 <div className="text-center">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="relative group mb-6 mx-auto"
+                    className="relative group mb-6 mx-auto flex justify-center"
                   >
                     <img
                       src="/stakeclock-product.png"
                       alt="StakeClock App Interface - Social accountability timer with countdown and stake selection"
-                      className="w-64 h-auto max-w-full rounded-3xl shadow-apple hover:shadow-apple-lg transition-all duration-300 bg-white p-4"
+                      className="w-64 h-auto max-w-full rounded-3xl shadow-apple hover:shadow-apple-lg transition-all duration-300 bg-white p-4 mx-auto block"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 rounded-3xl transition-all duration-300"></div>
                   </motion.div>
