@@ -14,7 +14,7 @@ import BackToTop from './components/BackToTop';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-white">
+    <div className="App min-h-screen bg-white page-transition">
       <Navigation />
       <div id="hero">
         <Hero />

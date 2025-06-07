@@ -42,29 +42,47 @@ const ProjectOverview = () => {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                 <div className="bg-white rounded-2xl p-6 shadow-apple">
-                   <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                 <motion.div 
+                   whileHover={{ scale: 1.02, y: -5 }}
+                   className="bg-white rounded-2xl p-6 shadow-apple hover:shadow-apple-lg transition-all duration-300"
+                 >
+                   <motion.div 
+                     whileHover={{ rotate: 10 }}
+                     className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4"
+                   >
                      <span className="text-2xl">💧</span>
-                   </div>
+                   </motion.div>
                    <h3 className="font-semibold text-apple-text mb-2">Individualized Health Approaches</h3>
                    <p className="text-apple-secondary">Health is personal and contextual, shaped by lifestyle and energy levels.</p>
-                 </div>
+                 </motion.div>
                  
-                 <div className="bg-white rounded-2xl p-6 shadow-apple">
-                   <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                 <motion.div 
+                   whileHover={{ scale: 1.02, y: -5 }}
+                   className="bg-white rounded-2xl p-6 shadow-apple hover:shadow-apple-lg transition-all duration-300"
+                 >
+                   <motion.div 
+                     whileHover={{ rotate: -10 }}
+                     className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4"
+                   >
                      <span className="text-2xl">🍽️</span>
-                   </div>
+                   </motion.div>
                    <h3 className="font-semibold text-apple-text mb-2">Hydration & Eating Challenges</h3>
                    <p className="text-apple-secondary">Forgetting to hydrate or eat regularly due to lack of knowledge and busy schedules.</p>
-                 </div>
+                 </motion.div>
                  
-                 <div className="bg-white rounded-2xl p-6 shadow-apple">
-                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                 <motion.div 
+                   whileHover={{ scale: 1.02, y: -5 }}
+                   className="bg-white rounded-2xl p-6 shadow-apple hover:shadow-apple-lg transition-all duration-300"
+                 >
+                   <motion.div 
+                     whileHover={{ rotate: 10 }}
+                     className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+                   >
                      <span className="text-2xl">🤝</span>
-                   </div>
+                   </motion.div>
                    <h3 className="font-semibold text-apple-text mb-2">Community Accountability</h3>
                    <p className="text-apple-secondary">Strong interest in community-focused accountability to motivate healthy behaviors.</p>
-                 </div>
+                 </motion.div>
               </div>
             </div>
           </motion.div>
