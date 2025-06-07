@@ -1,5 +1,7 @@
 # StakeClock Case Study Website
 
+🌐 **Live Site:** [stakeclock.xyz](https://stakeclock.xyz)
+
 A beautiful, minimalistic React website showcasing the StakeClock HCI capstone project. Built with React, Framer Motion, and Tailwind CSS 
 
 ## 🚀 Quick Start
