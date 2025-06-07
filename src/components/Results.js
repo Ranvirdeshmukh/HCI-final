@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import InteractiveChart from './InteractiveChart';
 
 const Results = () => {
   const fadeInUp = {
@@ -32,6 +33,11 @@ const Results = () => {
               Results & Testing
             </h2>
             <div className="w-24 h-1 bg-apple-blue mx-auto rounded-full"></div>
+          </motion.div>
+
+          {/* Interactive Chart */}
+          <motion.div variants={fadeInUp}>
+            <InteractiveChart />
           </motion.div>
 
           {/* Controlled Experiment Results */}
