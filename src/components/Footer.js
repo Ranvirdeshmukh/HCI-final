@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
+    initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" }
+    transition: { duration: 0.6, ease: "easeOut" }
   };
 
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
         <motion.div
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp}
           className="text-center space-y-8"
         >
