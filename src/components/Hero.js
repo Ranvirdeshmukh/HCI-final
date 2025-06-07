@@ -17,8 +17,36 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white section-padding">
-      <div className="container-max text-center">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50/30 section-padding relative overflow-hidden pt-20">
+      {/* Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          animate={{ 
+            rotate: [0, 360],
+            scale: [1, 1.1, 1]
+          }}
+          transition={{ 
+            duration: 20, 
+            repeat: Infinity, 
+            ease: "linear" 
+          }}
+          className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-apple-blue/5 to-purple-500/5 rounded-full blur-3xl"
+        />
+        <motion.div
+          animate={{ 
+            rotate: [360, 0],
+            scale: [1, 0.9, 1]
+          }}
+          transition={{ 
+            duration: 15, 
+            repeat: Infinity, 
+            ease: "linear" 
+          }}
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-purple-500/5 to-apple-blue/5 rounded-full blur-3xl"
+        />
+      </div>
+      
+      <div className="container-max text-center relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="initial"
@@ -63,22 +91,46 @@ const Hero = () => {
             variants={fadeInUp}
             className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mt-16 max-w-4xl mx-auto"
           >
-            <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
+            <motion.div 
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-gray-100 hover:shadow-apple hover:border-gray-200 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-2xl">📅</span>
+              </div>
               <h3 className="font-semibold text-apple-text mb-2">Timeline</h3>
               <p className="text-apple-secondary">Final Project</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-gray-100 hover:shadow-apple hover:border-gray-200 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-2xl">👥</span>
+              </div>
               <h3 className="font-semibold text-apple-text mb-2">Team</h3>
               <p className="text-apple-secondary">Maeve, Baris, Ranvir</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-gray-100 hover:shadow-apple hover:border-gray-200 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-2xl">🎯</span>
+              </div>
               <h3 className="font-semibold text-apple-text mb-2">Role</h3>
               <p className="text-apple-secondary">Research · Design · Testing</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-gray-100 hover:shadow-apple hover:border-gray-200 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-2xl">📈</span>
+              </div>
               <h3 className="font-semibold text-apple-text mb-2">Impact</h3>
               <p className="text-apple-secondary font-semibold text-apple-blue">313% improvement</p>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Scroll indicator */}
