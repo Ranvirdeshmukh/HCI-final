@@ -24,7 +24,7 @@ const Footer = () => {
               Credits
             </h3>
             
-                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-apple-blue to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white text-2xl font-bold">MC</span>
@@ -48,20 +48,12 @@ const Footer = () => {
                  <h4 className="font-semibold text-white text-lg mb-2">Ranvir Deshmukh</h4>
                  <p className="text-gray-400">Prototyping & Development</p>
                </div>
-               
-               <div className="text-center">
-                 <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                   <span className="text-white text-2xl font-bold">D</span>
-                 </div>
-                 <h4 className="font-semibold text-white text-lg mb-2">Dawson</h4>
-                 <p className="text-gray-400">Research & Analysis</p>
-               </div>
              </div>
             
                          <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
                <p className="text-gray-300 leading-relaxed">
-                 Research, design, and testing by Maeve Conneely, Baris Yildirim, Ranvir Deshmukh, and Dawson. 
-                 Special thanks to <span className="font-semibold text-white">focus group participants</span> who shared their experiences with health and wellness habits so we could learn and design better solutions.
+                 Research, design, and testing by Maeve Conneely, Baris Yildirim, and Ranvir Deshmukh. 
+                 Special thanks to <span className="font-semibold text-white">24 participants</span> who took part in our controlled experiment to help us understand the effectiveness of different reminder types.
                </p>
              </div>
           </div>

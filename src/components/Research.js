@@ -63,7 +63,7 @@ const Research = () => {
                      </div>
                      <div>
                        <div className="text-2xl font-bold text-apple-blue">24</div>
-                       <div className="text-sm text-apple-secondary">Participants</div>
+                       <div className="text-sm text-apple-secondary">Experiment Participants</div>
                      </div>
                    </div>
                 </div>

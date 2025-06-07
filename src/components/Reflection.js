@@ -85,13 +85,13 @@ const Reflection = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <span className="text-3xl">📊</span>
                 </div>
-                <h4 className="font-bold text-apple-text text-xl mb-4 text-center">
-                  Broader Testing
-                </h4>
-                <p className="text-apple-secondary leading-relaxed text-center">
-                  Larger, balanced sample and validated stress scales. 
-                  Long-term studies on habit formation and retention.
-                </p>
+                                 <h4 className="font-bold text-apple-text text-xl mb-4 text-center">
+                   Experimental Improvements
+                 </h4>
+                 <p className="text-apple-secondary leading-relaxed text-center">
+                   Include a true control group with no reminders. 
+                   Expand sample size for better balance between groups and more robust statistical analysis.
+                 </p>
               </div>
             </div>
           </motion.div>

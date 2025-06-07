@@ -91,20 +91,21 @@ npm run build
 - **Maeve Conneely** - Research & User Experience
 - **Baris Yildirim** - Interaction & Visual Design  
 - **Ranvir Deshmukh** - Prototyping & Development
-- **Dawson** - Research & Analysis
 
 ## 🔬 Research Highlights
 
 ### Methodology
-- Focus groups with Dartmouth students
-- Comprehensive research on health and wellness habits
-- Synthesis of themes: Reminders, Community, and Gamification
-- User journey mapping and storyboard development
+- Controlled experiment with 24 participants across 3 conditions
+- Group 1: Digital reminders only (n=7)
+- Group 2: Social reminders (n=7) 
+- Group 3: Social + Financial reminders (n=10)
+- T-tests conducted to determine statistical significance
 
 ### Key Findings
-- Social + Financial stakes = 4.71 avg. tasks completed
-- 100% user retention for optimal condition
-- Money amplifies commitment but requires user control
+- Group 3 (Social + Financial): 4.71 avg. tasks completed, 100% likely to continue
+- Group 2 (Social only): 2.86 avg. tasks completed, 50% likely to continue  
+- Group 1 (Digital only): 1.14 avg. tasks completed, 71.4% likely to continue
+- Statistical significance: p = 0.00028 (Groups 1 vs 2), p = 7.51 × 10⁻⁸ (Groups 1 vs 3)
 
 ## 🚀 Deployment
 

@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Project badge */}
           <motion.div variants={fadeInUp}>
                         <span className="inline-flex items-center px-4 py-2 rounded-full bg-apple-blue/10 text-apple-blue text-sm font-medium mb-6">
-              Final Project • Dartmouth College
+              Final Project •  COSC 67/267 Human-Computer Interaction
             </span>
           </motion.div>
 
@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
             <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
               <h3 className="font-semibold text-apple-text mb-2">Team</h3>
-              <p className="text-apple-secondary">Maeve, Baris, Ranvir, Dawson</p>
+              <p className="text-apple-secondary">Maeve, Baris, Ranvir</p>
             </div>
             <div className="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100">
               <h3 className="font-semibold text-apple-text mb-2">Role</h3>
