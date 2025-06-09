@@ -164,7 +164,10 @@ const Process = () => {
             </h3>
             
             <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100">
-                             <div className="text-center mb-8 relative group">
+                             <div 
+                 className="text-center mb-8 relative group cursor-pointer"
+                 onClick={() => openModal("/HMW.png", "How Might We Questions - Design challenge framing", "How Might We Questions")}
+               >
                  <motion.img
                    initial={{ opacity: 0, scale: 0.95 }}
                    whileInView={{ opacity: 1, scale: 1 }}
@@ -173,10 +176,9 @@ const Process = () => {
                    transition={{ duration: 0.6 }}
                    src="/HMW.png"
                    alt="How Might We Questions - Design challenge framing"
-                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
-                   onClick={() => openModal("/HMW.png", "How Might We Questions - Design challenge framing", "How Might We Questions")}
+                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
                  />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
                      <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
                    </div>
@@ -198,7 +200,10 @@ const Process = () => {
             </h3>
             
             <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
-                             <div className="text-center mb-8 relative group">
+                             <div 
+                 className="text-center mb-8 relative group cursor-pointer"
+                 onClick={() => openModal("/3principals of success.png", "3 Principles of Success - Core design principles", "3 Principles of Success")}
+               >
                  <motion.img
                    initial={{ opacity: 0, scale: 0.95 }}
                    whileInView={{ opacity: 1, scale: 1 }}
@@ -207,10 +212,9 @@ const Process = () => {
                    transition={{ duration: 0.6 }}
                    src="/3principals of success.png"
                    alt="3 Principles of Success - Core design principles"
-                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
-                   onClick={() => openModal("/3principals of success.png", "3 Principles of Success - Core design principles", "3 Principles of Success")}
+                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
                  />
-                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
                      <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
                    </div>
