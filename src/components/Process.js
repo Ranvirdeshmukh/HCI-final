@@ -122,10 +122,10 @@ const Process = () => {
                   <div>
                     <h4 className="font-bold text-apple-text text-xl mb-4">Crazy-8 Sketching</h4>
                     <p className="text-apple-secondary leading-relaxed mb-4">
-                      Generated <span className="font-semibold text-apple-blue">40+ concepts</span> in rapid ideation sessions, exploring various approaches to social accountability and behavioral nudging.
+                      Generated <span className="font-semibold text-apple-blue">40+ concepts</span> in rapid ideation sessions, exploring various approaches to social accountability and behavioral nudging. Early storyboard sketches helped visualize user journeys and emotional moments.
                     </p>
                     <p className="text-apple-secondary leading-relaxed">
-                      We converged on a shared‑stake countdown mechanic that balanced social pressure with financial motivation.
+                      We converged on a shared‑stake countdown mechanic that balanced social pressure with financial motivation, validated through visual storytelling and user journey mapping.
                     </p>
                   </div>
                   
@@ -153,6 +153,42 @@ const Process = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Storyboard & Visual Concepts */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-apple-text text-center mb-12">
+              Storyboard & Visual Concepts
+            </h3>
+            
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100">
+              <div 
+                className="text-center mb-8 relative group cursor-pointer"
+                onClick={() => openModal("/storyboard sketches.png", "Storyboard Sketches - Visual storytelling of user journey and concept development", "Storyboard Sketches")}
+              >
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.02 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  src="/storyboard sketches.png"
+                  alt="Storyboard Sketches - Visual storytelling of user journey and concept development"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
+                  <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                    <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  Early storyboard sketches illustrate the user journey and helped us visualize key interaction points, 
+                  emotional moments, and opportunities for social engagement within the StakeClock experience.
+                </p>
               </div>
             </div>
           </motion.div>

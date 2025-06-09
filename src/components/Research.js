@@ -11,7 +11,6 @@ const Research = () => {
   });
 
   const openModal = (imageSrc, imageAlt, title) => {
-    console.log('Opening modal for:', title);
     setModalState({
       isOpen: true,
       imageSrc,
@@ -70,10 +69,10 @@ const Research = () => {
                     Research Method
                   </h3>
                   <p className="text-lg text-apple-text leading-relaxed mb-6">
-                    <span className="font-semibold text-apple-blue">Focus groups and interviews</span> with Dartmouth students exploring health and wellness habits, particularly around hydration, eating, and accountability.
+                    <span className="font-semibold text-apple-blue">Focus groups and interviews</span> with Dartmouth students exploring health and wellness habits, particularly around hydration, eating, and accountability. Through systematic analysis of user behaviors and preferences, we identified critical pain points and opportunities for intervention.
                   </p>
                   <p className="text-apple-secondary leading-relaxed">
-                    Synthesis revealed three key themes: <span className="font-semibold text-apple-blue">Reminders, Community, and Gamification</span> as core motivational drivers for habit formation.
+                    Synthesis revealed three key themes: <span className="font-semibold text-apple-blue">Reminders, Community, and Gamification</span> as core motivational drivers for habit formation. Detailed research findings provide comprehensive insights into user motivations and behavioral patterns.
                   </p>
                 </div>
                 
@@ -199,6 +198,42 @@ const Research = () => {
                 <p className="text-apple-text leading-relaxed">
                   <span className="font-bold">Key Quote:</span> "I get so busy during the day that I realize at 3 PM I haven't had any water." 
                   This highlights the need for intelligent, context-aware reminders that respect users' schedules while promoting healthy habits.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Detailed Research Findings */}
+          <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
+              Research Group Findings
+            </h3>
+            
+            <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
+              <div 
+                className="text-center mb-8 relative group cursor-pointer"
+                onClick={() => openModal("/research group findings.png", "Research Group Findings - Detailed analysis of focus group sessions and user interviews", "Research Group Findings")}
+              >
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.02 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  src="/research group findings.png"
+                  alt="Research Group Findings - Detailed analysis of focus group sessions and user interviews"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
+                  <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                    <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-apple-blue/10 rounded-2xl p-6">
+                <p className="text-apple-text leading-relaxed text-center">
+                  Comprehensive analysis from our focus group sessions revealed deep insights into user motivations, 
+                  behavioral patterns, and the key themes that shaped our design approach.
                 </p>
               </div>
             </div>
