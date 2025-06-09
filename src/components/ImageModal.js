@@ -1,21 +1,7 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, title }) => {
-  const [scale, setScale] = useState(1);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleWheel = useCallback((e) => {
-    e.preventDefault();
-    const delta = e.deltaY > 0 ? -0.1 : 0.1;
-    setScale(prev => Math.max(0.5, Math.min(3, prev + delta)));
-  }, []);
-
-  const resetZoom = useCallback(() => {
-    setScale(1);
-    setPosition({ x: 0, y: 0 });
-  }, []);
-
   if (!isOpen) return null;
 
   return (
