@@ -97,6 +97,127 @@ const Research = () => {
             </div>
           </motion.div>
 
+          {/* Individual Background Research */}
+          <motion.div variants={fadeInUp} className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-bold text-apple-text mb-6">
+                Individual Background Research
+              </h3>
+              <p className="text-lg text-apple-secondary max-w-3xl mx-auto">
+                Each team member conducted comprehensive background research to understand different aspects of habit formation, 
+                accountability systems, and behavioral design principles.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              {/* Maeve's Research */}
+              <div className="bg-white rounded-3xl p-6 shadow-apple">
+                <div 
+                  className="relative group cursor-pointer mb-6"
+                  onClick={() => openModal("/research maeve.png", "Maeve's Background Research - User experience and behavioral psychology research", "Maeve's Research")}
+                >
+                  <motion.img
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.02 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    src="/research maeve.png"
+                    alt="Maeve's Background Research - User experience and behavioral psychology research"
+                    className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
+                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full transition-all duration-300">
+                      <span className="text-xs font-medium text-apple-text">🔍 Click to enlarge</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-apple-text text-xl mb-3">Maeve Conneely</h4>
+                  <p className="text-apple-secondary leading-relaxed">
+                    Focused on <span className="font-semibold text-apple-blue">user experience research and behavioral psychology</span>. 
+                    Explored habit formation theories, motivation systems, and the psychology behind accountability partnerships. 
+                    Her research laid the foundation for understanding user motivations and designing empathetic interaction patterns.
+                  </p>
+                </div>
+              </div>
+
+              {/* Baris's Research */}
+              <div className="bg-white rounded-3xl p-6 shadow-apple">
+                <div 
+                  className="relative group cursor-pointer mb-6"
+                  onClick={() => openModal("/baris resear ch.png", "Baris's Background Research - Interaction design and gamification systems", "Baris's Research")}
+                >
+                  <motion.img
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.02 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    src="/baris resear ch.png"
+                    alt="Baris's Background Research - Interaction design and gamification systems"
+                    className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
+                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full transition-all duration-300">
+                      <span className="text-xs font-medium text-apple-text">🔍 Click to enlarge</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-apple-text text-xl mb-3">Baris Yildirim</h4>
+                  <p className="text-apple-secondary leading-relaxed">
+                    Investigated <span className="font-semibold text-apple-blue">interaction design and gamification systems</span>. 
+                    Researched social accountability mechanisms, competitive elements in wellness apps, and interface design patterns 
+                    that promote sustained engagement while maintaining user autonomy and positive social dynamics.
+                  </p>
+                </div>
+              </div>
+
+              {/* Ranvir's Research */}
+              <div className="bg-white rounded-3xl p-6 shadow-apple">
+                <div 
+                  className="relative group cursor-pointer mb-6"
+                  onClick={() => openModal("/ranvir research.png", "Ranvir's Background Research - Technical implementation and behavioral change systems", "Ranvir's Research")}
+                >
+                  <motion.img
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.02 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    src="/ranvir research.png"
+                    alt="Ranvir's Background Research - Technical implementation and behavioral change systems"
+                    className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
+                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full transition-all duration-300">
+                      <span className="text-xs font-medium text-apple-text">🔍 Click to enlarge</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-apple-text text-xl mb-3">Ranvir Deshmukh</h4>
+                  <p className="text-apple-secondary leading-relaxed">
+                    Explored <span className="font-semibold text-apple-blue">technical implementation and behavioral change systems</span>. 
+                    Studied notification systems, timing algorithms, and the technical architecture needed to support real-time 
+                    social interactions. His research informed the development strategy and experimental methodology framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-apple-blue/10 rounded-2xl p-8">
+              <h4 className="font-bold text-apple-text text-xl mb-4 text-center">Research Synthesis</h4>
+              <p className="text-apple-text leading-relaxed text-center max-w-4xl mx-auto">
+                The combination of behavioral psychology insights, interaction design principles, and technical feasibility research 
+                converged into our core hypothesis: <span className="font-semibold text-apple-blue">
+                social accountability combined with meaningful financial stakes would significantly outperform traditional digital reminders
+                </span> in driving habit completion while maintaining positive user experience.
+              </p>
+            </div>
+          </motion.div>
+
           {/* POV Statement */}
           <motion.div variants={fadeInUp} className="max-w-5xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-apple-text text-center mb-12">
