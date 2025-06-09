@@ -160,9 +160,9 @@ const Research = () => {
                 <div className="text-center">
                   <h4 className="font-bold text-apple-text text-xl mb-3">Baris Yildirim</h4>
                   <p className="text-apple-secondary leading-relaxed">
-                    Investigated <span className="font-semibold text-apple-blue">interaction design and gamification systems</span>. 
-                    Researched social accountability mechanisms, competitive elements in wellness apps, and interface design patterns 
-                    that promote sustained engagement while maintaining user autonomy and positive social dynamics.
+                    Explored <span className="font-semibold text-apple-blue">wearables for stress management and behavioral intervention</span>. 
+                    Analyzed Oura Ring technology and "Wearables for Stress Management: A Scoping Review" research. 
+                    Discovered <span className="font-medium">three successful intervention types: just-in-time self-regulation, therapy support, and continuous awareness</span> — directly shaping StakeClock's real-time accountability approach.
                   </p>
                 </div>
               </div>
