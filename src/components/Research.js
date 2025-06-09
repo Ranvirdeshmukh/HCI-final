@@ -188,9 +188,9 @@ const Research = () => {
                 <div className="text-center">
                   <h4 className="font-bold text-apple-text text-xl mb-3">Ranvir Deshmukh</h4>
                   <p className="text-apple-secondary leading-relaxed">
-                    Explored <span className="font-semibold text-apple-blue">technical implementation and behavioral change systems</span>. 
-                    Studied notification systems, timing algorithms, and the technical architecture needed to support real-time 
-                    social interactions. His research informed the development strategy and experimental methodology framework.
+                    Researched <span className="font-semibold text-apple-blue">recovery technologies and data-driven performance tracking</span>. 
+                    Studied Normatec Recovery Boots, Whoop 4.0 strap, and "Effectiveness of Recovery Strategies in Endurance Athletes" research. 
+                    Found that <span className="font-medium">cryotherapy and compression show recovery benefits, but no single strategy works universally</span> — inspiring StakeClock's personalized stake selection approach.
                   </p>
                 </div>
               </div>
@@ -198,11 +198,15 @@ const Research = () => {
 
             <div className="bg-apple-blue/10 rounded-2xl p-8">
               <h4 className="font-bold text-apple-text text-xl mb-4 text-center">Research Synthesis</h4>
+              <p className="text-apple-text leading-relaxed text-center max-w-4xl mx-auto mb-6">
+                Three distinct research streams converged into our design approach: <span className="font-semibold text-apple-blue">psychological resilience</span> (showing adaptable people recover better from setbacks), 
+                <span className="font-semibold text-apple-blue">wearable intervention patterns</span> (just-in-time self-regulation, therapy support, continuous awareness), 
+                and <span className="font-semibold text-apple-blue">personalized recovery strategies</span> (no universal solution works for everyone).
+              </p>
               <p className="text-apple-text leading-relaxed text-center max-w-4xl mx-auto">
-                The combination of behavioral psychology insights, interaction design principles, and technical feasibility research 
-                converged into our core hypothesis: <span className="font-semibold text-apple-blue">
-                social accountability combined with meaningful financial stakes would significantly outperform traditional digital reminders
-                </span> in driving habit completion while maintaining positive user experience.
+                This led to our core hypothesis: <span className="font-semibold text-apple-blue">
+                social accountability combined with personalized financial stakes would provide just-in-time intervention while building psychological resilience
+                </span> — outperforming one-size-fits-all digital reminders.
               </p>
             </div>
           </motion.div>
