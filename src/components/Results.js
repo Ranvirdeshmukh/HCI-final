@@ -192,6 +192,7 @@ const Results = () => {
                   onClick={() => openModal("/stakeclock-product.png", "StakeClock App Interface - Real product used in controlled experiment showing countdown timer, social features, and stake selection", "StakeClock App Experience")}
                 >
                   <img
+                    loading="lazy"
                     src="/stakeclock-product.png"
                     alt="StakeClock App Interface - Real product used in controlled experiment showing countdown timer, social features, and stake selection"
                     className="w-full h-auto rounded-3xl shadow-apple-lg hover:shadow-2xl transition-all duration-300 bg-white p-6"

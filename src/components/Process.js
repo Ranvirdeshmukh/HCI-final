@@ -167,12 +167,8 @@ const Process = () => {
                 className="text-center mb-8 relative group cursor-pointer"
                 onClick={() => openModal("/storyboard sketches.png", "Storyboard Sketches - Visual storytelling of user journey and concept development", "Storyboard Sketches")}
               >
-                <motion.img
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  whileHover={{ scale: 1.02 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                <img
+                  loading="lazy"
                   src="/storyboard sketches.png"
                   alt="Storyboard Sketches - Visual storytelling of user journey and concept development"
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -203,12 +199,8 @@ const Process = () => {
                  className="text-center mb-8 relative group cursor-pointer"
                  onClick={() => openModal("/HMW.png", "How Might We Questions - Design challenge framing", "How Might We Questions")}
                >
-                 <motion.img
-                   initial={{ opacity: 0, scale: 0.95 }}
-                   whileInView={{ opacity: 1, scale: 1 }}
-                   whileHover={{ scale: 1.02 }}
-                   viewport={{ once: true }}
-                   transition={{ duration: 0.6 }}
+                 <img
+                   loading="lazy"
                    src="/HMW.png"
                    alt="How Might We Questions - Design challenge framing"
                    className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -239,12 +231,8 @@ const Process = () => {
                  className="text-center mb-8 relative group cursor-pointer"
                  onClick={() => openModal("/3principals of success.png", "3 Principles of Success - Core design principles", "3 Principles of Success")}
                >
-                 <motion.img
-                   initial={{ opacity: 0, scale: 0.95 }}
-                   whileInView={{ opacity: 1, scale: 1 }}
-                   whileHover={{ scale: 1.02 }}
-                   viewport={{ once: true }}
-                   transition={{ duration: 0.6 }}
+                 <img
+                   loading="lazy"
                    src="/3principals of success.png"
                    alt="3 Principles of Success - Core design principles"
                    className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"

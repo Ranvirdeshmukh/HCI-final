@@ -28,16 +28,17 @@ const Research = () => {
     });
   };
 
+  // Simplified animation variants for better performance
   const fadeInUp = {
-    initial: { opacity: 0, y: 30 },
+    initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" }
+    transition: { duration: 0.4, ease: "easeOut" }
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.05
       }
     }
   };
@@ -116,12 +117,8 @@ const Research = () => {
                   className="relative group cursor-pointer mb-6"
                   onClick={() => openModal("/research maeve.png", "Maeve's Background Research - User experience and behavioral psychology research", "Maeve's Research")}
                 >
-                  <motion.img
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    whileHover={{ scale: 1.02 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
+                  <img
+                    loading="lazy"
                     src="/research maeve.png"
                     alt="Maeve's Background Research - User experience and behavioral psychology research"
                     className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -135,9 +132,9 @@ const Research = () => {
                 <div className="text-center">
                   <h4 className="font-bold text-apple-text text-xl mb-3">Maeve Conneely</h4>
                   <p className="text-apple-secondary leading-relaxed">
-                    Focused on <span className="font-semibold text-apple-blue">user experience research and behavioral psychology</span>. 
-                    Explored habit formation theories, motivation systems, and the psychology behind accountability partnerships. 
-                    Her research laid the foundation for understanding user motivations and designing empathetic interaction patterns.
+                    Investigated <span className="font-semibold text-apple-blue">psychological resilience in athletic recovery and performance</span>. 
+                    Studied Firefly Recovery technology and research on "The Role of Psychological Resilience in Athletic Injury Recovery and Performance." 
+                    Key finding: <span className="font-medium">adaptable athletes recover better from setbacks</span>, informing how StakeClock should support users through habit formation challenges.
                   </p>
                 </div>
               </div>
@@ -148,12 +145,8 @@ const Research = () => {
                   className="relative group cursor-pointer mb-6"
                   onClick={() => openModal("/baris resear ch.png", "Baris's Background Research - Interaction design and gamification systems", "Baris's Research")}
                 >
-                  <motion.img
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    whileHover={{ scale: 1.02 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
+                  <img
+                    loading="lazy"
                     src="/baris resear ch.png"
                     alt="Baris's Background Research - Interaction design and gamification systems"
                     className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -180,12 +173,8 @@ const Research = () => {
                   className="relative group cursor-pointer mb-6"
                   onClick={() => openModal("/ranvir research.png", "Ranvir's Background Research - Technical implementation and behavioral change systems", "Ranvir's Research")}
                 >
-                  <motion.img
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    whileHover={{ scale: 1.02 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
+                  <img
+                    loading="lazy"
                     src="/ranvir research.png"
                     alt="Ranvir's Background Research - Technical implementation and behavioral change systems"
                     className="w-full h-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -229,12 +218,8 @@ const Research = () => {
                 className="text-center mb-8 relative group cursor-pointer"
                 onClick={() => openModal("/POV.png", "Point of View Statement - User needs and insights", "Point of View Statement")}
               >
-                <motion.img
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  whileHover={{ scale: 1.02 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                <img
+                  loading="lazy"
                   src="/POV.png"
                   alt="Point of View Statement - User needs and insights"
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -265,12 +250,8 @@ const Research = () => {
                 className="text-center mb-8 relative group cursor-pointer"
                 onClick={() => openModal("/5.2_ Maeve, Ranvir, Baris.png", "User Action Flow - Step-by-step user journey", "User Action Flow")}
               >
-                <motion.img
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  whileHover={{ scale: 1.02 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                <img
+                  loading="lazy"
                   src="/5.2_ Maeve, Ranvir, Baris.png"
                   alt="User Action Flow - Step-by-step user journey"
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"
@@ -335,12 +316,8 @@ const Research = () => {
                 className="text-center mb-8 relative group cursor-pointer"
                 onClick={() => openModal("/research group findings.png", "Research Group Findings - Detailed analysis of focus group sessions and user interviews", "Research Group Findings")}
               >
-                <motion.img
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  whileHover={{ scale: 1.02 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                <img
+                  loading="lazy"
                   src="/research group findings.png"
                   alt="Research Group Findings - Detailed analysis of focus group sessions and user interviews"
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300"

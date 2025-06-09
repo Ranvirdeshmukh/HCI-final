@@ -175,6 +175,7 @@ const ProjectOverview = () => {
                     onClick={() => openModal("/stakeclock-product.png", "StakeClock App Interface - Social accountability timer with countdown and stake selection", "StakeClock App Interface")}
                   >
                     <img
+                      loading="lazy"
                       src="/stakeclock-product.png"
                       alt="StakeClock App Interface - Social accountability timer with countdown and stake selection"
                       className="w-64 h-auto max-w-full rounded-3xl shadow-apple hover:shadow-apple-lg transition-all duration-300 bg-white p-4 mx-auto block"
