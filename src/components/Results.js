@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import InteractiveChart from './InteractiveChart';
+import ImageModal from './ImageModal';
 
 const Results = () => {
+  const [modalState, setModalState] = useState({
+    isOpen: false,
+    imageSrc: '',
+    imageAlt: '',
+    title: ''
+  });
+
+  const openModal = (imageSrc, imageAlt, title) => {
+    setModalState({
+      isOpen: true,
+      imageSrc,
+      imageAlt,
+      title
+    });
+  };
+
+  const closeModal = () => {
+    setModalState({
+      isOpen: false,
+      imageSrc: '',
+      imageAlt: '',
+      title: ''
+    });
+  };
+
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
@@ -162,14 +188,19 @@ const Results = () => {
               <div className="flex justify-center">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="relative group max-w-sm mx-auto"
+                  className="relative group max-w-sm mx-auto cursor-pointer"
+                  onClick={() => openModal("/stakeclock-product.png", "StakeClock App Interface - Real product used in controlled experiment showing countdown timer, social features, and stake selection", "StakeClock App Experience")}
                 >
                   <img
                     src="/stakeclock-product.png"
                     alt="StakeClock App Interface - Real product used in controlled experiment showing countdown timer, social features, and stake selection"
                     className="w-full h-auto rounded-3xl shadow-apple-lg hover:shadow-2xl transition-all duration-300 bg-white p-6"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 rounded-3xl transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 rounded-3xl transition-all duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full transition-all duration-300 mb-8">
+                      <span className="text-xs font-medium text-apple-text">🔍 Click to enlarge</span>
+                    </div>
+                  </div>
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <span className="text-sm font-medium text-apple-text">Actual Product Tested</span>
                   </div>
@@ -258,6 +289,15 @@ const Results = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Image Modal */}
+      <ImageModal
+        isOpen={modalState.isOpen}
+        onClose={closeModal}
+        imageSrc={modalState.imageSrc}
+        imageAlt={modalState.imageAlt}
+        title={modalState.title}
+      />
     </section>
   );
 };

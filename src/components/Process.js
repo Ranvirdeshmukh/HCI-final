@@ -11,6 +11,7 @@ const Process = () => {
   });
 
   const openModal = (imageSrc, imageAlt, title) => {
+    console.log('Process - Opening modal with:', imageSrc, imageAlt, title);
     setModalState({
       isOpen: true,
       imageSrc,

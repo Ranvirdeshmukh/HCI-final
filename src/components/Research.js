@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import ImageModal from './ImageModal';
 
 const Research = () => {
+  const [modalState, setModalState] = useState({
+    isOpen: false,
+    imageSrc: '',
+    imageAlt: '',
+    title: ''
+  });
+
+  const openModal = (imageSrc, imageAlt, title) => {
+    console.log('Opening modal with:', imageSrc, imageAlt, title);
+    setModalState({
+      isOpen: true,
+      imageSrc,
+      imageAlt,
+      title
+    });
+  };
+
+  const closeModal = () => {
+    setModalState({
+      isOpen: false,
+      imageSrc: '',
+      imageAlt: '',
+      title: ''
+    });
+  };
+
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
@@ -78,12 +105,23 @@ const Research = () => {
             </h3>
             
             <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
-              <div className="text-center mb-8">
-                <img
+              <div className="text-center mb-8 relative group">
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.02 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
                   src="/POV.png"
                   alt="Point of View Statement - User needs and insights"
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
+                  onClick={() => openModal("/POV.png", "Point of View Statement - User needs and insights", "Point of View Statement")}
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                    <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-apple-blue/10 rounded-2xl p-6">
                 <p className="text-apple-text leading-relaxed text-center">
@@ -101,12 +139,23 @@ const Research = () => {
             </h3>
             
             <div className="bg-white rounded-3xl p-8 shadow-apple border border-gray-100 mb-16">
-              <div className="text-center mb-8">
-                <img
+              <div className="text-center mb-8 relative group">
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ scale: 1.02 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
                   src="/5.2_ Maeve, Ranvir, Baris.png"
                   alt="User Action Flow - Step-by-step user journey"
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg hover:shadow-apple-lg transition-all duration-300 cursor-pointer"
+                  onClick={() => openModal("/5.2_ Maeve, Ranvir, Baris.png", "User Action Flow - Step-by-step user journey", "User Action Flow")}
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300">
+                    <span className="text-sm font-medium text-apple-text">🔍 Click to enlarge</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-apple-blue/10 rounded-2xl p-6">
                 <p className="text-apple-text leading-relaxed text-center">
@@ -211,6 +260,15 @@ const Research = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Image Modal */}
+      <ImageModal
+        isOpen={modalState.isOpen}
+        onClose={closeModal}
+        imageSrc={modalState.imageSrc}
+        imageAlt={modalState.imageAlt}
+        title={modalState.title}
+      />
     </section>
   );
 };
